@@ -1,0 +1,80 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+.center_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outer_ring {
+  width: 200px;
+  height: 200px;
+  /* background-color: crimson; */
+  border-radius: 50%;
+  border-top: 8px solid crimson;
+  border-bottom: 8px solid crimson;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: relative;
+  animation: rotatering 2s linear infinite;
+}
+.middle_ring {
+  width: 150px;
+  height: 150px;
+  /* background-color: crimson; */
+  border-radius: 50%;
+  border-top: 8px solid crimson;
+  border-bottom: 8px solid crimson;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  animation: rotatering 2s linear infinite reverse;
+}
+.inner_ring {
+  width: 100px;
+  height: 100px;
+  /* background-color: crimson; */
+  border-radius: 50%;
+  border-top: 8px solid crimson;
+  border-bottom: 8px solid crimson;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  animation: rotatering 2s linear infinite;
+}
+.dot {
+  width: 50px;
+  height: 50px;
+  background-color: crimson;
+  border-radius: 50%;
+  position: absolute;
+  animation: rotatering 3s linear infinite;
+}
+.disapper {
+  animation: vanish 1s forwards;
+}
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes rotatering {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+  }
+
+  100% {
+    transform: rotate(2000deg) scale(1.5);
+  }
+}
+.loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}

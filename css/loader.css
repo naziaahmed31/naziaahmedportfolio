@@ -78,3 +78,88 @@
   height: 100vh;
   z-index: 9999;
 }
+
+/* ALL ANIMATIONS */
+
+#myanimation1 span
+{
+   animation-name: myanime1;
+   animation-duration: 3.5s;
+   animation-iteration-count: infinite;
+
+}
+
+@keyframes myanime1
+{
+  10% { color: crimson;}
+  20% { color: rgb(207, 57, 87);}
+  30% { color: rgb(221, 82, 110);}
+  40% { color: rgb(223, 126, 146);}
+  50% { color: rgb(241, 161, 177);}
+  60% { color: rgb(236, 214, 218);}
+
+  
+  20% {font-size: 40px; }
+  30% {font-size: 41px; }
+  30% {font-size: 42px; }
+  
+  
+  
+}
+
+#myanimation2 
+{
+   animation-name: myanime2;
+   animation-duration: 1.5s;
+   animation-iteration-count: infinite;
+   
+
+}
+
+@keyframes myanime2
+{
+  20% {font-size: 25px; }
+  40% {font-size: 27px; }
+  60% {font-size: 29px; }
+  80% {font-size: 31px; }
+  
+
+}
+
+#myanimation3  span
+{
+  animation-name: myanime3;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  
+
+}
+
+@keyframes myanime3
+{
+ 
+
+ from {text-decoration: none;}
+  to{ text-decoration: underline;} 
+
+}
+
+#myanimation4  
+{
+  animation-name: myanime4;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  
+
+}
+
+@keyframes myanime4
+{
+ 
+
+ from {color: black;}
+  to{ color: crimson;} 
+
+}
+
+
